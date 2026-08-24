@@ -54,6 +54,15 @@
 
 
             #endregion
+            #region Question07
+            //What is the 'struct' constraint? Write an example.
+
+            //T must be a value type.
+
+            //Print(5);//valid
+            //Print('A');//valid
+            //Print("Hello");//Invalid
+            #endregion
         }
 
         public static void Swap<T>(ref T x, ref T y)
@@ -74,5 +83,11 @@
             }
             return max;
         }
+        #region Struct
+        static void Print<T>(T value) where T : struct
+        {
+            Console.WriteLine(value);
+        }
+        #endregion
     }
 }
