@@ -74,6 +74,14 @@
             //int[] items = { 1, 2, 3, 4, 5 };
             //Print(string.Join(", ", items));//Valid
             #endregion
+            #region Question09
+            //What is the 'new()' constraint? Write an example.
+
+            //T must have a parameterless constructor
+
+            //Product p = Create<Product>();
+
+            #endregion
         }
 
         #region Swap
@@ -108,6 +116,12 @@
         static void Print<T>(T value) where T : class
         {
             Console.WriteLine(value);
+        }
+        #endregion
+        #region New()
+        static T Create<T>() where T : new()
+        {
+            return new T();
         }
         #endregion
     }
