@@ -82,6 +82,15 @@
             //Product p = Create<Product>();
 
             #endregion
+            #region Question10
+            // What is the interface constraint? Write an example.
+
+            //T must implement specific interface 
+
+            //IRepository<Product> repository = new ProductRepository();
+            //repository.Add(new Product(1, "Laptop", 2000));
+
+            #endregion
         }
 
         #region Swap
@@ -122,6 +131,12 @@
         static T Create<T>() where T : new()
         {
             return new T();
+        }
+        #endregion
+        #region Interface
+        static void Save<T>(T item) where T : IRepository<T>
+        {
+            item.Add(item);
         }
         #endregion
     }
