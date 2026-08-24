@@ -63,14 +63,28 @@
             //Print('A');//valid
             //Print("Hello");//Invalid
             #endregion
+            #region Question08
+            //What is the 'class' constraint? Write an example.
+
+            //T must be a reference type.
+
+            //Print(5);//Invalid
+            //Print('A');//Invalid
+            //Print("Hello");//valid
+            //int[] items = { 1, 2, 3, 4, 5 };
+            //Print(string.Join(", ", items));//Valid
+            #endregion
         }
 
+        #region Swap
         public static void Swap<T>(ref T x, ref T y)
         {
             T temp = x;
             x = y;
             y = temp;
         }
+        #endregion
+        #region FindMax
         public static T FindMax<T>(T[] items) where T : IComparable
         {
             T max = items[0];
@@ -83,8 +97,15 @@
             }
             return max;
         }
+        #endregion
         #region Struct
-        static void Print<T>(T value) where T : struct
+        //static void Print<T>(T value) where T : struct
+        //{
+        //    Console.WriteLine(value);
+        //}
+        #endregion
+        #region Class
+        static void Print<T>(T value) where T : class
         {
             Console.WriteLine(value);
         }
