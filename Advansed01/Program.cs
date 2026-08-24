@@ -91,6 +91,14 @@
             //repository.Add(new Product(1, "Laptop", 2000));
 
             #endregion
+            #region Question11
+            // What is the base class constraint? Write an example.
+
+            //T must inhert from this class
+
+            //Product laptop = new Laptop(2,"Lap",5000);
+            //Print(laptop);
+            #endregion
         }
 
         #region Swap
@@ -122,10 +130,10 @@
         //}
         #endregion
         #region Class
-        static void Print<T>(T value) where T : class
-        {
-            Console.WriteLine(value);
-        }
+        //static void Print<T>(T value) where T : class
+        //{
+        //    Console.WriteLine(value);
+        //}
         #endregion
         #region New()
         static T Create<T>() where T : new()
@@ -137,6 +145,12 @@
         static void Save<T>(T item) where T : IRepository<T>
         {
             item.Add(item);
+        }
+        #endregion
+        #region BaseClass
+        static void Print<T>(T item) where T : Product
+        {
+            Console.WriteLine(item.Name);
         }
         #endregion
     }

@@ -19,9 +19,6 @@ namespace Advansed01
             Name = name;
             Price = price;
         }
-        public Product()
-        {
-            
-        }
+       
     }
 }
