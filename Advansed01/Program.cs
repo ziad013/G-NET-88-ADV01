@@ -33,13 +33,31 @@
             //Swap<int>(ref x, ref y);
             //Console.WriteLine($"X = {x} , Y = {y}");
             #endregion
+            #region Question05
+            // Write a generic method FindMax<T> that finds maximum value
+
+            //int[] items = {20, 5, 6, 7, 2 };
+            //Console.WriteLine(FindMax(items));
+            #endregion
         }
 
-        public static void Swap<T>(ref T x,ref T y)
+        public static void Swap<T>(ref T x, ref T y)
         {
             T temp = x;
             x = y;
             y = temp;
+        }
+        public static T FindMax<T>(T[] items) where T : IComparable
+        {
+            T max = items[0];
+            for (int i = 0; i < items.Length; i++)
+            {
+                if (items[i].CompareTo(max) > 0)
+                {
+                    max = items[i];
+                }
+            }
+            return max;
         }
     }
 }
