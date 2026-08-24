@@ -99,6 +99,16 @@
             //Product laptop = new Laptop(2,"Lap",5000);
             //Print(laptop);
             #endregion
+            #region Question12
+            //How do you apply multiple constraints? Write an example. 
+
+            //General Generec(Struct or class or BaseClass) , Interface(s) , new()
+
+            //Repository<Product> repo = new Repository<Product>();
+
+            //Product p = repo.Create();
+
+            #endregion
         }
 
         #region Swap
