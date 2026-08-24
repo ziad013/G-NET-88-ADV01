@@ -39,6 +39,21 @@
             //int[] items = {20, 5, 6, 7, 2 };
             //Console.WriteLine(FindMax(items));
             #endregion
+            #region Question06
+
+
+            //IRepository<Product> repository = new ProductRepository();
+
+            //repository.Add(new Product(1, "Laotop", 15000));
+            //repository.Add(new Product(2, "Phone", 9000));
+            //repository.Add(new Product(3, "Tv", 20000));
+
+            //repository.Delete(3);
+
+            //repository.Get(2);
+
+
+            #endregion
         }
 
         public static void Swap<T>(ref T x, ref T y)
