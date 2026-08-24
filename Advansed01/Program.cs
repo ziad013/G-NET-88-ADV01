@@ -23,6 +23,23 @@
 
             //Pair<int, string> pair = new Pair<int, string>(5, "Ziad");
             #endregion
+            #region Question04
+            //What is a generic method? Write Swap<T> method.
+
+            //uses a type parameter (T)
+
+            //int x = 5; int y = 10;
+            ////Swap(ref x, ref y);
+            //Swap<int>(ref x, ref y);
+            //Console.WriteLine($"X = {x} , Y = {y}");
+            #endregion
+        }
+
+        public static void Swap<T>(ref T x,ref T y)
+        {
+            T temp = x;
+            x = y;
+            y = temp;
         }
     }
 }
