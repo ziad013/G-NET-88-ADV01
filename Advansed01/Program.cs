@@ -16,6 +16,13 @@
             //container.Add(5);
             //Console.WriteLine(container.get());
             #endregion
+            #region Question03
+            //What are multiple type parameters? Write Pair<TKey, TValue>
+
+            //Generic class can accept more than one type
+
+            //Pair<int, string> pair = new Pair<int, string>(5, "Ziad");
+            #endregion
         }
     }
 }
